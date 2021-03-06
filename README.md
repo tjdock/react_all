@@ -1,4 +1,4 @@
-# React + Typescript + AntDesign + snowpack + rxjs + SharePoint
+# React + Typescript + AntDesign + snowpack + rxjs + redux + SharePoint
 ## 创建项目
 
 >```pnpx create-snowpack-app ZAPI.TaskManager.V3.Web --template @snowpack/app-template-minimal```
@@ -7,16 +7,21 @@
 >```pnpm start```
 
 ## 安装React
->```pnpm install react react-dom --save```
+>```pnpm i --save react react-dom```
 
-## 启用 fast refresh
->```pnpm install @snowpack/plugin-react-refresh --save-dev```
+## 安装路由
+>```pnpm i --save connected-react-router react-router-dom history```
+>```pnpm i --save-dev @types/history@4.7.2 @types/react-router-dom```
+
+## 安装插件
+>```pnpm i --save-dev @snowpack/plugin-react-refresh @snowpack/plugin-dotenv snowpack-sass-compiler```
 
 ## 安装 typescript
 >```pnpm i --save-dev typescript @types/react @types/react-dom @snowpack/plugin-typescript```
 
-## 安装 dotenv
->```pnpm install @snowpack/plugin-dotenv --save-dev```
+## 安装 ant design
+>```pnpm i --save antd```
 
-<!-- ## 安装 plugin-webpack
->```pnpm install @snowpack/plugin-webpack --save-dev``` -->
+## 安装 redux
+>```pnpm i --save redux redux-saga redux-thunk react-redux```
+>```pnpm i --save-dev @types/react-redux redux-devtools-extension```
