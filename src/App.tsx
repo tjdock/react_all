@@ -82,10 +82,10 @@ const App: FC = () => {
   const dropdown = () => (
     <Menu>
       <Menu.Item>
-        <a rel="noopener noreferrer" href={import.meta.env.SNOWPACK_LOGIN_ANOTHER_URL + window.location}>切换用户</a>
+        <a rel="noopener noreferrer" href={import.meta.env.SNOWPACK_PUBLIC_LOGIN_ANOTHER_URL + window.location}>切换用户</a>
       </Menu.Item>
       <Menu.Item>
-        <a rel="noopener noreferrer" href={import.meta.env.SNOWPACK_SIGN_OUT_URL}>注销</a>
+        <a rel="noopener noreferrer" href={import.meta.env.SNOWPACK_PUBLIC_SIGN_OUT_URL}>注销</a>
       </Menu.Item>
     </Menu>
   );

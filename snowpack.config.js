@@ -2,14 +2,22 @@
 module.exports = {
   mount: {
     // directory name: 'build directory'
-    public: '/',
-    src: '/dist',
+    // public: '/',
+    // src: '/dist',
+    public: { url: '/', static: true, resolve: false },
+    src: '/'
   },
   plugins: [
     '@snowpack/plugin-react-refresh',
     '@snowpack/plugin-dotenv',
     '@snowpack/plugin-typescript',
-    'snowpack-sass-compiler'
+    //'snowpack-sass-compiler'
+    ["@snowpack/plugin-sass", {
+      compilerOptions: {
+        style: "compressed",
+        sourceMap: false,
+      }
+    }]
   ],
   routes: [
     /* Enable an SPA Fallback in development: */
@@ -29,9 +37,15 @@ module.exports = {
     /* ... */
   },
   devOptions: {
-    /* ... */
+    port: 3000,
+    //open: 'none',
+    bundle: false,
   },
   buildOptions: {
-    /* ... */
+    clean: true,
+    out: 'build'
   },
+  exclude: [
+    '**/node_modules/**/*'
+  ]
 };

@@ -10,17 +10,17 @@
 >```pnpm i --save react react-dom```
 
 ## 安装路由
->```pnpm i --save connected-react-router react-router-dom history```
+>```pnpm i --save connected-react-router react-router-dom history@4.7.2```
 >```pnpm i --save-dev @types/history@4.7.2 @types/react-router-dom```
 
 ## 安装插件
->```pnpm i --save-dev @snowpack/plugin-react-refresh @snowpack/plugin-dotenv snowpack-sass-compiler```
+>```pnpm i --save-dev @types/snowpack-env @snowpack/plugin-react-refresh @snowpack/plugin-dotenv @snowpack/plugin-sass```
 
 ## 安装 typescript
 >```pnpm i --save-dev typescript @types/react @types/react-dom @snowpack/plugin-typescript```
 
 ## 安装 ant design
->```pnpm i --save antd```
+>```pnpm i --save antd @ant-design/icons```
 
 ## 安装 redux
 >```pnpm i --save redux redux-saga redux-thunk react-redux```
