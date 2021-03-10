@@ -1,11 +1,11 @@
 export const LOGIN = 'MAIN/LOGIN';
 export const LOGIN_SUCCESS = 'MAIN/LOGIN_SUCCESS';
 
-interface LoginAction {
+export interface LoginAction {
   type: typeof LOGIN;
 }
 
-interface LoginSuccessAction {
+export interface LoginSuccessAction {
   type: typeof LOGIN_SUCCESS;
   loginName: string;
   displayName: string;

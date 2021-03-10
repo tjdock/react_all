@@ -1,27 +1,22 @@
-import React, { Suspense, useEffect, useState, FC } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { Switch, Route, useLocation, useHistory } from 'react-router-dom';
-import { Button, Menu, Dropdown } from 'antd';
-import {
-  SettingOutlined,
-  MenuUnfoldOutlined,
-  MenuFoldOutlined,
-  UserOutlined,
-} from '@ant-design/icons';
+import React, {FC, Suspense, useEffect, useState} from 'react';
+import {useDispatch, useSelector} from 'react-redux';
+import {Route, Switch, useHistory, useLocation} from 'react-router-dom';
+import {Button, Dropdown, Menu} from 'antd';
+import {MenuFoldOutlined, MenuUnfoldOutlined, SettingOutlined, UserOutlined,} from '@ant-design/icons';
 import './App.scss';
 import logo from './assets/logo.png';
-import type { RootState } from './store';
-import type { MenuBar, MyMenu } from './store/menu/types';
+import type {RootState} from './store';
+import type {MenuBar, MyMenu} from './store/menu/types';
 // import { login } from "./store/main/actions";
 // import { Dict, MenuBar } from "./store/dict/types";
-import { routesConfigs } from './routes.config';
-import { LOGIN } from './store/main/types';
+import {routesConfigs} from './routes.config';
+import {LOGIN, LoginAction} from './store/main/types';
 
 const App: FC = () => {
   const dispatch = useDispatch();
   const location = useLocation();
   const history = useHistory();
-  // const displayName = useSelector((state: RootState) => state.main.displayName);
+  const displayName = useSelector((state: RootState) => state.main.displayName);
   const menus = useSelector((state: RootState) => state.menu.menus);
   // const roles = useSelector((state: RootState) => state.main.roles);
 
@@ -33,7 +28,7 @@ const App: FC = () => {
   useEffect(() => {
     console.log('current=' + current);
     //todo test
-    dispatch({ type: LOGIN });
+    dispatch({type:LOGIN});
 
     if (current === '') {
       setCurrent('union');
@@ -179,7 +174,7 @@ const App: FC = () => {
               style={{ color: 'white' }}
               icon={<UserOutlined style={{ color: 'white' }} />}
             >
-              {/* {displayName} */}
+               {displayName}
             </Button>
           </Dropdown>
         </div>

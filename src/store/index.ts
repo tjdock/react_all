@@ -1,19 +1,30 @@
-import { combineReducers } from 'redux';
-import { createHashHistory } from 'history';
-import { connectRouter } from 'connected-react-router';
-import { takeEvery } from 'redux-saga/effects';
-import { createEpicMiddleware } from 'redux-observable';
-import { createStore, applyMiddleware } from 'redux';
-import { composeWithDevTools } from 'redux-devtools-extension/developmentOnly';
+import {applyMiddleware, combineReducers, createStore} from 'redux';
+import {createHashHistory} from 'history';
+import {connectRouter, routerMiddleware} from 'connected-react-router';
+import {createEpicMiddleware} from "redux-observable";
+import {composeWithDevTools} from "redux-devtools-extension/developmentOnly";
+import {menuReducer} from './menu/reducers';
+import {mainReducer} from './main/reducers';
+import {mainEpic} from "./main/actions";
 
-import { menuReducer } from './menu/reducers';
-import { mainReducer } from './main/reducers';
-import { mainEpic } from './main/actions';
+export const history = createHashHistory();
+const epicMiddleware = createEpicMiddleware();
 
-export const rootReducer = combineReducers({
-  router: connectRouter(createHashHistory()),
-  menu: menuReducer,
-  main: mainReducer,
+//reducer
+const rootReducer = combineReducers({
+    router: connectRouter(history),
+    menu: menuReducer,
+    main: mainReducer,
 });
+
+export const store = createStore(
+    rootReducer,
+    composeWithDevTools(
+        applyMiddleware(epicMiddleware, routerMiddleware(history))
+    )
+);
+
+//middleware
+epicMiddleware.run(mainEpic);
 
 export type RootState = ReturnType<typeof rootReducer>;
