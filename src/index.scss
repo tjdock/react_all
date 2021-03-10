@@ -1,4 +1,4 @@
- @import 'variable.scss';
+@import 'variable.scss';
 
 //scrollbar
 .mat-sidenav-content::-webkit-scrollbar,
@@ -40,7 +40,6 @@ mat-sidenav.sidenav::-webkit-scrollbar-track {
   width: 100%;
 }
 
-
 .custSubmenu {
   border-right: none !important;
   background: rgb(115, 169, 228) !important;
@@ -54,7 +53,8 @@ mat-sidenav.sidenav::-webkit-scrollbar-track {
   }
 
   .ant-menu-submenu-arrow {
-    &:before, &:after {
+    &:before,
+    &:after {
       background: #fff !important;
     }
   }
@@ -76,7 +76,8 @@ mat-sidenav.sidenav::-webkit-scrollbar-track {
   }
 }
 
-.ant-menu-item-selected, .ant-menu-item-active {
+.ant-menu-item-selected,
+.ant-menu-item-active {
   background: rgb(73, 126, 184) !important;
 }
 
@@ -105,18 +106,18 @@ mat-sidenav.sidenav::-webkit-scrollbar-track {
 }
 
 //成功按钮
-.ant-btn-success{
+.ant-btn-success {
   background: $success !important;
   border-color: $success !important;
-  color:#fff !important;
-  &:hover{
+  color: #fff !important;
+  &:hover {
     opacity: 0.8;
   }
 }
-.ant-btn-link.success{
+.ant-btn-link.success {
   color: $success;
-  &:hover{
-    color:$success;
+  &:hover {
+    color: $success;
   }
 }
 

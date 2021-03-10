@@ -10,6 +10,7 @@ export interface MenuBar {
   DictType?: string | null
   role?: string | null
   children: MyMenu[]
+  icon:any
 }
 
 export interface MenuState {

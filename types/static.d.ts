@@ -57,10 +57,3 @@ declare module '*.png' {
 }
 
 /* CUSTOM: ADD YOUR OWN HERE */
-
-declare namespace NodeJS {
-  interface ProcessEnv {
-    readonly NODE_ENV: 'development' | 'production' | 'test';
-
-  }
-}

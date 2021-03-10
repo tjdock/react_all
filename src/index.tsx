@@ -6,6 +6,11 @@ import App from './App';
 /*router import (BrowserRouter 或者 HashRouter) createHashHistory*/
 import { createHashHistory } from 'history';
 import { routerMiddleware, ConnectedRouter } from 'connected-react-router';
+import { composeWithDevTools } from 'redux-devtools-extension/developmentOnly';
+import { createEpicMiddleware } from 'redux-observable';
+import { createStore, applyMiddleware } from 'redux';
+import { rootReducer } from './store';
+
 /*****************************************************************/
 
 /*antd-ui , local import*/
@@ -16,58 +21,39 @@ import 'moment/locale/zh-cn';
 import { ConfigProvider } from 'antd';
 /*antd-ui , local import****************************************************************/
 
-
 /*redux import*/
-import { composeWithDevTools } from 'redux-devtools-extension/developmentOnly';
 import createSagaMiddleware from 'redux-saga';
 import thunk from 'redux-thunk';
 import { Provider } from 'react-redux';
-import { createStore, applyMiddleware } from 'redux';
-import {
-  rootReducer,
-  // watchAttachment,
-  // watchContract,
-  // watchDict,
-  // watchMain,
-  // watchPerson,
-  // watchUnion,
-  // watchUpload
-} from "./store";
+
+import { mainEpic } from './store/main/actions';
+
 /*redux import****************************************************************/
 
-
 /*redux settings*/
-const sagaMiddleware = createSagaMiddleware();
+const epicMiddleware = createEpicMiddleware();
 const history = createHashHistory();
 
-const store = createStore(
+export const store = createStore(
   rootReducer,
   composeWithDevTools(
-    applyMiddleware(thunk, sagaMiddleware, routerMiddleware(history))
+    applyMiddleware(epicMiddleware, routerMiddleware(history))
   )
 );
-// sagaMiddleware.run(watchMain);
-// sagaMiddleware.run(watchDict);
-// sagaMiddleware.run(watchUpload);
-// sagaMiddleware.run(watchPerson);
-// sagaMiddleware.run(watchUnion);
-// sagaMiddleware.run(watchContract);
-// sagaMiddleware.run(watchAttachment);
+epicMiddleware.run(mainEpic);
 
 /*antd settings*/
 moment.locale('cn');
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Provider store={store}>
-      <ConfigProvider locale={zhCN}>
-        <ConnectedRouter history={history}>
-          <App />
-        </ConnectedRouter>
-      </ConfigProvider>
-    </Provider>
-  </React.StrictMode>,
-  document.getElementById('root'),
+  <Provider store={store}>
+    <ConfigProvider locale={zhCN}>
+      <ConnectedRouter history={history}>
+        <App />
+      </ConnectedRouter>
+    </ConfigProvider>
+  </Provider>,
+  document.getElementById('root')
 );
 
 // Hot Module Replacement (HMR) - Remove this snippet to remove HMR.
