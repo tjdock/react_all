@@ -20,8 +20,9 @@
 >```pnpm i --save-dev typescript @types/react @types/react-dom @snowpack/plugin-typescript```
 
 ## 安装 ant design
->```pnpm i --save antd @ant-design/icons```
+>```pnpm i --save antd```
+>```pnpm i --save-dev @ant-design/icons```
 
 ## 安装 redux
->```pnpm i --save redux redux-saga redux-thunk react-redux```
+>```pnpm i --save redux react-redux redux-observable```
 >```pnpm i --save-dev @types/react-redux redux-devtools-extension```

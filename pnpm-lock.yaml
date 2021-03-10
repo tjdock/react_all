@@ -5,12 +5,10 @@ dependencies:
   moment: 2.29.1
   react: 17.0.1
   react-dom: 17.0.1_react@17.0.1
-  react-redux: 7.2.2_380dc38591053d98779d1f25fc7202b9
+  react-redux: 7.2.2_react@17.0.1+redux@4.0.5
   react-router-dom: 5.2.0_react@17.0.1
   redux: 4.0.5
   redux-observable: 1.2.0_redux@4.0.5+rxjs@6.6.6
-  redux-saga: 1.1.3
-  redux-thunk: 2.3.0
   rxjs: 6.6.6
 devDependencies:
   '@ant-design/icons': 4.5.0_react-dom@17.0.1+react@17.0.1
@@ -20,7 +18,7 @@ devDependencies:
   '@snowpack/plugin-typescript': 1.2.1_typescript@4.2.3
   '@types/history': 4.7.2
   '@types/react': 17.0.3
-  '@types/react-dom': 17.0.1
+  '@types/react-dom': 17.0.2
   '@types/react-redux': 7.1.16
   '@types/react-router-dom': 5.1.7
   '@types/snowpack-env': 2.3.3
@@ -44,7 +42,7 @@ packages:
     dependencies:
       '@ant-design/colors': 6.0.0
       '@ant-design/icons-svg': 4.1.0
-      '@babel/runtime': 7.13.9
+      '@babel/runtime': 7.13.10
       classnames: 2.2.6
       insert-css: 2.0.0
       rc-util: 5.8.1_react-dom@17.0.1+react@17.0.1
@@ -59,7 +57,7 @@ packages:
       tarball: '@ant-design/icons/download/@ant-design/icons-4.5.0.tgz'
   /@ant-design/react-slick/0.28.2:
     dependencies:
-      '@babel/runtime': 7.13.9
+      '@babel/runtime': 7.13.10
       classnames: 2.2.6
       json2mq: 0.2.0
       lodash: 4.17.21
@@ -70,7 +68,7 @@ packages:
       tarball: '@ant-design/react-slick/download/@ant-design/react-slick-0.28.2.tgz'
   /@babel/code-frame/7.12.13:
     dependencies:
-      '@babel/highlight': 7.13.8
+      '@babel/highlight': 7.13.10
     dev: true
     resolution:
       integrity: sha1-3PyCa+72XnXFDiHTg319lXmN1lg=
@@ -80,14 +78,14 @@ packages:
     resolution:
       integrity: sha1-W3g7mAjxXO9xVH8baR80+P9gA6Y=
       tarball: '@babel/compat-data/download/@babel/compat-data-7.13.8.tgz'
-  /@babel/core/7.13.8:
+  /@babel/core/7.13.10:
     dependencies:
       '@babel/code-frame': 7.12.13
       '@babel/generator': 7.13.9
-      '@babel/helper-compilation-targets': 7.13.8_@babel+core@7.13.8
+      '@babel/helper-compilation-targets': 7.13.10_@babel+core@7.13.10
       '@babel/helper-module-transforms': 7.13.0
-      '@babel/helpers': 7.13.0
-      '@babel/parser': 7.13.9
+      '@babel/helpers': 7.13.10
+      '@babel/parser': 7.13.10
       '@babel/template': 7.12.13
       '@babel/traverse': 7.13.0
       '@babel/types': 7.13.0
@@ -102,8 +100,8 @@ packages:
     engines:
       node: '>=6.9.0'
     resolution:
-      integrity: sha1-wZHZxYcXiKWR1p6h3APlhDo2gPs=
-      tarball: '@babel/core/download/@babel/core-7.13.8.tgz'
+      integrity: sha1-B94FC72Bk/zYo8J5GMCJBhOpRVk=
+      tarball: '@babel/core/download/@babel/core-7.13.10.tgz'
   /@babel/generator/7.13.9:
     dependencies:
       '@babel/types': 7.13.0
@@ -113,10 +111,10 @@ packages:
     resolution:
       integrity: sha1-Onqpb577jivkLTjYDizrTGTY3jk=
       tarball: '@babel/generator/download/@babel/generator-7.13.9.tgz'
-  /@babel/helper-compilation-targets/7.13.8_@babel+core@7.13.8:
+  /@babel/helper-compilation-targets/7.13.10_@babel+core@7.13.10:
     dependencies:
       '@babel/compat-data': 7.13.8
-      '@babel/core': 7.13.8
+      '@babel/core': 7.13.10
       '@babel/helper-validator-option': 7.12.17
       browserslist: 4.16.3
       semver: 6.3.0
@@ -124,8 +122,8 @@ packages:
     peerDependencies:
       '@babel/core': ^7.0.0
     resolution:
-      integrity: sha1-Ar2yJ4NDmvsRsvAJgUvdiDhL1Gg=
-      tarball: '@babel/helper-compilation-targets/download/@babel/helper-compilation-targets-7.13.8.tgz'
+      integrity: sha1-ExChZ4y4QnwHp1N1DaT4zkQr3Qw=
+      tarball: '@babel/helper-compilation-targets/download/@babel/helper-compilation-targets-7.13.10.tgz'
   /@babel/helper-function-name/7.12.13:
     dependencies:
       '@babel/helper-get-function-arity': 7.12.13
@@ -217,35 +215,35 @@ packages:
     resolution:
       integrity: sha1-0fvwEuGnm37rv9xtJwuq+NnrmDE=
       tarball: '@babel/helper-validator-option/download/@babel/helper-validator-option-7.12.17.tgz'
-  /@babel/helpers/7.13.0:
+  /@babel/helpers/7.13.10:
     dependencies:
       '@babel/template': 7.12.13
       '@babel/traverse': 7.13.0
       '@babel/types': 7.13.0
     dev: true
     resolution:
-      integrity: sha1-dkeuVzd7TwQIv0+KevAcQuQbrcA=
-      tarball: '@babel/helpers/download/@babel/helpers-7.13.0.tgz'
-  /@babel/highlight/7.13.8:
+      integrity: sha1-/Y4rp0iFM83qxFzBWOnryl48ffg=
+      tarball: '@babel/helpers/download/@babel/helpers-7.13.10.tgz'
+  /@babel/highlight/7.13.10:
     dependencies:
       '@babel/helper-validator-identifier': 7.12.11
       chalk: 2.4.2
       js-tokens: 4.0.0
     dev: true
     resolution:
-      integrity: sha1-ELLax4UmQk38H0dlDQ5BXf2dxIE=
-      tarball: '@babel/highlight/download/@babel/highlight-7.13.8.tgz'
-  /@babel/parser/7.13.9:
+      integrity: sha1-qLKmYUj1sn1maxXYF3Q0enMdUtE=
+      tarball: '@babel/highlight/download/@babel/highlight-7.13.10.tgz'
+  /@babel/parser/7.13.10:
     dev: true
     engines:
       node: '>=6.0.0'
     hasBin: true
     resolution:
-      integrity: sha1-yjTLleHC3RJoY6hEZa6O9mEUvpk=
-      tarball: '@babel/parser/download/@babel/parser-7.13.9.tgz'
-  /@babel/plugin-syntax-class-properties/7.12.13_@babel+core@7.13.8:
+      integrity: sha1-j4+b97Ovo+q9Bh96W830/sPEhAk=
+      tarball: '@babel/parser/download/@babel/parser-7.13.10.tgz'
+  /@babel/plugin-syntax-class-properties/7.12.13_@babel+core@7.13.10:
     dependencies:
-      '@babel/core': 7.13.8
+      '@babel/core': 7.13.10
       '@babel/helper-plugin-utils': 7.13.0
     dev: true
     peerDependencies:
@@ -253,16 +251,16 @@ packages:
     resolution:
       integrity: sha1-tcmHJ0xKOoK4lxR5aTGmtTVErhA=
       tarball: '@babel/plugin-syntax-class-properties/download/@babel/plugin-syntax-class-properties-7.12.13.tgz?cache=0&sync_timestamp=1612318910848&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40babel%2Fplugin-syntax-class-properties%2Fdownload%2F%40babel%2Fplugin-syntax-class-properties-7.12.13.tgz'
-  /@babel/runtime/7.13.9:
+  /@babel/runtime/7.13.10:
     dependencies:
       regenerator-runtime: 0.13.7
     resolution:
-      integrity: sha1-l9viEW4mMMSJ8i4GVt7NYKqh/O4=
-      tarball: '@babel/runtime/download/@babel/runtime-7.13.9.tgz'
+      integrity: sha1-R9QqV7YJX0Ro2kQDiP262L6/DX0=
+      tarball: '@babel/runtime/download/@babel/runtime-7.13.10.tgz'
   /@babel/template/7.12.13:
     dependencies:
       '@babel/code-frame': 7.12.13
-      '@babel/parser': 7.13.9
+      '@babel/parser': 7.13.10
       '@babel/types': 7.13.0
     dev: true
     resolution:
@@ -274,7 +272,7 @@ packages:
       '@babel/generator': 7.13.9
       '@babel/helper-function-name': 7.12.13
       '@babel/helper-split-export-declaration': 7.12.13
-      '@babel/parser': 7.13.9
+      '@babel/parser': 7.13.10
       '@babel/types': 7.13.0
       debug: 4.3.1
       globals: 11.12.0
@@ -298,50 +296,6 @@ packages:
     resolution:
       integrity: sha1-w8WuVDyJfKqcKmhjC+01W+X5mQ8=
       tarball: '@ctrl/tinycolor/download/@ctrl/tinycolor-3.4.0.tgz'
-  /@redux-saga/core/1.1.3:
-    dependencies:
-      '@babel/runtime': 7.13.9
-      '@redux-saga/deferred': 1.1.2
-      '@redux-saga/delay-p': 1.1.2
-      '@redux-saga/is': 1.1.2
-      '@redux-saga/symbols': 1.1.2
-      '@redux-saga/types': 1.1.0
-      redux: 4.0.5
-      typescript-tuple: 2.2.1
-    dev: false
-    resolution:
-      integrity: sha1-MIUJe1ek6o21Uo1YZz8gzglQ9qQ=
-      tarball: '@redux-saga/core/download/@redux-saga/core-1.1.3.tgz'
-  /@redux-saga/deferred/1.1.2:
-    dev: false
-    resolution:
-      integrity: sha1-WZN6Drpx//KJ8TECM7xRgRenGIg=
-      tarball: '@redux-saga/deferred/download/@redux-saga/deferred-1.1.2.tgz'
-  /@redux-saga/delay-p/1.1.2:
-    dependencies:
-      '@redux-saga/symbols': 1.1.2
-    dev: false
-    resolution:
-      integrity: sha1-j1FfSwCbBbAqN6fD0Mqd3BV7s1U=
-      tarball: '@redux-saga/delay-p/download/@redux-saga/delay-p-1.1.2.tgz'
-  /@redux-saga/is/1.1.2:
-    dependencies:
-      '@redux-saga/symbols': 1.1.2
-      '@redux-saga/types': 1.1.0
-    dev: false
-    resolution:
-      integrity: sha1-rmyEIfWPy6gPr3ytt9ZbMDuX5Y4=
-      tarball: '@redux-saga/is/download/@redux-saga/is-1.1.2.tgz'
-  /@redux-saga/symbols/1.1.2:
-    dev: false
-    resolution:
-      integrity: sha1-IWpnKkh/wlaHK4A0g1r8IqLQWV0=
-      tarball: '@redux-saga/symbols/download/@redux-saga/symbols-1.1.2.tgz'
-  /@redux-saga/types/1.1.0:
-    dev: false
-    resolution:
-      integrity: sha1-DoHOVrSIO0sqMAHr4aspi4QjcgQ=
-      tarball: '@redux-saga/types/download/@redux-saga/types-1.1.0.tgz'
   /@snowpack/plugin-dotenv/2.0.5:
     dependencies:
       dotenv: 8.2.0
@@ -352,8 +306,8 @@ packages:
       tarball: '@snowpack/plugin-dotenv/download/@snowpack/plugin-dotenv-2.0.5.tgz'
   /@snowpack/plugin-react-refresh/2.4.0_react-dom@17.0.1+react@17.0.1:
     dependencies:
-      '@babel/core': 7.13.8
-      '@babel/plugin-syntax-class-properties': 7.12.13_@babel+core@7.13.8
+      '@babel/core': 7.13.10
+      '@babel/plugin-syntax-class-properties': 7.12.13_@babel+core@7.13.10
       react: 17.0.1
       react-dom: 17.0.1_react@17.0.1
       react-refresh: 0.9.0
@@ -389,11 +343,6 @@ packages:
     resolution:
       integrity: sha1-DmcOolTVWSQbbus4lPh1SZHnMiA=
       tarball: '@types/history/download/@types/history-4.7.2.tgz'
-  /@types/history/4.7.8:
-    dev: true
-    resolution:
-      integrity: sha1-STSDh5gwdXBf6PTgL7Z/farsSTQ=
-      tarball: '@types/history/download/@types/history-4.7.8.tgz'
   /@types/hoist-non-react-statics/3.3.1:
     dependencies:
       '@types/react': 17.0.3
@@ -407,13 +356,13 @@ packages:
     resolution:
       integrity: sha1-KrDV2i5YFflLC51LldHl8kOrLKc=
       tarball: '@types/prop-types/download/@types/prop-types-15.7.3.tgz'
-  /@types/react-dom/17.0.1:
+  /@types/react-dom/17.0.2:
     dependencies:
       '@types/react': 17.0.3
     dev: true
     resolution:
-      integrity: sha1-2S130CC/sIPgfMjgrJ+TNZmk1Wo=
-      tarball: '@types/react-dom/download/@types/react-dom-17.0.1.tgz'
+      integrity: sha1-NWVM9sSa4WLVvJCEPVQ33DgAjUM=
+      tarball: '@types/react-dom/download/@types/react-dom-17.0.2.tgz'
   /@types/react-redux/7.1.16:
     dependencies:
       '@types/hoist-non-react-statics': 3.3.1
@@ -426,7 +375,7 @@ packages:
       tarball: '@types/react-redux/download/@types/react-redux-7.1.16.tgz'
   /@types/react-router-dom/5.1.7:
     dependencies:
-      '@types/history': 4.7.8
+      '@types/history': 4.7.2
       '@types/react': 17.0.3
       '@types/react-router': 5.1.12
     dev: true
@@ -435,7 +384,7 @@ packages:
       tarball: '@types/react-router-dom/download/@types/react-router-dom-5.1.7.tgz'
   /@types/react-router/5.1.12:
     dependencies:
-      '@types/history': 4.7.8
+      '@types/history': 4.7.2
       '@types/react': 17.0.3
     dev: true
     resolution:
@@ -474,7 +423,7 @@ packages:
       '@ant-design/colors': 6.0.0
       '@ant-design/icons': 4.5.0_react-dom@17.0.1+react@17.0.1
       '@ant-design/react-slick': 0.28.2
-      '@babel/runtime': 7.13.9
+      '@babel/runtime': 7.13.10
       array-tree-filter: 2.1.0
       classnames: 2.2.6
       copy-to-clipboard: 3.3.1
@@ -506,7 +455,7 @@ packages:
       rc-tabs: 11.7.3_react-dom@17.0.1+react@17.0.1
       rc-textarea: 0.3.4_react-dom@17.0.1+react@17.0.1
       rc-tooltip: 5.1.0_react-dom@17.0.1+react@17.0.1
-      rc-tree: 4.1.4_react-dom@17.0.1+react@17.0.1
+      rc-tree: 4.1.5_react-dom@17.0.1+react@17.0.1
       rc-tree-select: 4.3.0_react-dom@17.0.1+react@17.0.1
       rc-trigger: 5.2.3_react-dom@17.0.1+react@17.0.1
       rc-upload: 4.0.1_react-dom@17.0.1+react@17.0.1
@@ -576,7 +525,7 @@ packages:
     dependencies:
       caniuse-lite: 1.0.30001197
       colorette: 1.2.2
-      electron-to-chromium: 1.3.682
+      electron-to-chromium: 1.3.684
       escalade: 3.1.1
       node-releases: 1.1.71
     dev: true
@@ -651,7 +600,7 @@ packages:
       lodash.isequalwith: 4.4.0
       prop-types: 15.7.2
       react: 17.0.1
-      react-redux: 7.2.2_380dc38591053d98779d1f25fc7202b9
+      react-redux: 7.2.2_react@17.0.1+redux@4.0.5
       redux: 4.0.5
     dev: false
     optionalDependencies:
@@ -709,11 +658,6 @@ packages:
     dev: true
     engines:
       node: '>=6.0'
-    peerDependencies:
-      supports-color: '*'
-    peerDependenciesMeta:
-      supports-color:
-        optional: true
     resolution:
       integrity: sha1-8NIpxQXgxtjEmsVT0bE9wYP2su4=
       tarball: debug/download/debug-4.3.1.tgz
@@ -745,18 +689,18 @@ packages:
     resolution:
       integrity: sha1-l+YZJZradQ7qPk6j4mvO6lQksWo=
       tarball: dotenv/download/dotenv-8.2.0.tgz
-  /electron-to-chromium/1.3.682:
+  /electron-to-chromium/1.3.684:
     dev: true
     resolution:
-      integrity: sha1-9LXI1Eed+Wth5QinIdbDLBJi7yM=
-      tarball: electron-to-chromium/download/electron-to-chromium-1.3.682.tgz
+      integrity: sha1-BT+7CkstXAdt+m4djs0GowdaVYo=
+      tarball: electron-to-chromium/download/electron-to-chromium-1.3.684.tgz
   /esbuild/0.8.57:
     dev: true
     hasBin: true
     requiresBuild: true
     resolution:
       integrity: sha1-pC0CvCtXxwvNDviX/iRHZrtt2SY=
-      tarball: esbuild/download/esbuild-0.8.57.tgz?cache=0&sync_timestamp=1615202900676&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fesbuild%2Fdownload%2Fesbuild-0.8.57.tgz
+      tarball: esbuild/download/esbuild-0.8.57.tgz
   /escalade/3.1.1:
     dev: true
     engines:
@@ -858,7 +802,7 @@ packages:
       tarball: has/download/has-1.0.3.tgz
   /history/4.10.1:
     dependencies:
-      '@babel/runtime': 7.13.9
+      '@babel/runtime': 7.13.10
       loose-envify: 1.4.0
       resolve-pathname: 3.0.0
       tiny-invariant: 1.1.0
@@ -1041,7 +985,7 @@ packages:
       tarball: mimic-fn/download/mimic-fn-2.1.0.tgz
   /mini-create-react-context/0.4.1_prop-types@15.7.2+react@17.0.1:
     dependencies:
-      '@babel/runtime': 7.13.9
+      '@babel/runtime': 7.13.10
       prop-types: 15.7.2
       react: 17.0.1
       tiny-warning: 1.0.3
@@ -1178,7 +1122,7 @@ packages:
       tarball: prop-types/download/prop-types-15.7.2.tgz
   /rc-align/4.0.9_react-dom@17.0.1+react@17.0.1:
     dependencies:
-      '@babel/runtime': 7.13.9
+      '@babel/runtime': 7.13.10
       classnames: 2.2.6
       dom-align: 1.12.0
       rc-util: 5.8.1_react-dom@17.0.1+react@17.0.1
@@ -1194,7 +1138,7 @@ packages:
       tarball: rc-align/download/rc-align-4.0.9.tgz
   /rc-cascader/1.4.2_react-dom@17.0.1+react@17.0.1:
     dependencies:
-      '@babel/runtime': 7.13.9
+      '@babel/runtime': 7.13.10
       array-tree-filter: 2.1.0
       rc-trigger: 5.2.3_react-dom@17.0.1+react@17.0.1
       rc-util: 5.8.1_react-dom@17.0.1+react@17.0.1
@@ -1210,7 +1154,7 @@ packages:
       tarball: rc-cascader/download/rc-cascader-1.4.2.tgz
   /rc-checkbox/2.3.2_react-dom@17.0.1+react@17.0.1:
     dependencies:
-      '@babel/runtime': 7.13.9
+      '@babel/runtime': 7.13.10
       classnames: 2.2.6
       react: 17.0.1
       react-dom: 17.0.1_react@17.0.1
@@ -1223,7 +1167,7 @@ packages:
       tarball: rc-checkbox/download/rc-checkbox-2.3.2.tgz
   /rc-collapse/3.1.0_react-dom@17.0.1+react@17.0.1:
     dependencies:
-      '@babel/runtime': 7.13.9
+      '@babel/runtime': 7.13.10
       classnames: 2.2.6
       rc-motion: 2.4.1_react-dom@17.0.1+react@17.0.1
       rc-util: 5.8.1_react-dom@17.0.1+react@17.0.1
@@ -1239,7 +1183,7 @@ packages:
       tarball: rc-collapse/download/rc-collapse-3.1.0.tgz
   /rc-dialog/8.5.2_react-dom@17.0.1+react@17.0.1:
     dependencies:
-      '@babel/runtime': 7.13.9
+      '@babel/runtime': 7.13.10
       classnames: 2.2.6
       rc-motion: 2.4.1_react-dom@17.0.1+react@17.0.1
       rc-util: 5.8.1_react-dom@17.0.1+react@17.0.1
@@ -1254,7 +1198,7 @@ packages:
       tarball: rc-dialog/download/rc-dialog-8.5.2.tgz?cache=0&sync_timestamp=1614997176362&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Frc-dialog%2Fdownload%2Frc-dialog-8.5.2.tgz
   /rc-drawer/4.3.1_react-dom@17.0.1+react@17.0.1:
     dependencies:
-      '@babel/runtime': 7.13.9
+      '@babel/runtime': 7.13.10
       classnames: 2.2.6
       rc-util: 5.8.1_react-dom@17.0.1+react@17.0.1
       react: 17.0.1
@@ -1268,7 +1212,7 @@ packages:
       tarball: rc-drawer/download/rc-drawer-4.3.1.tgz
   /rc-dropdown/3.2.0_react-dom@17.0.1+react@17.0.1:
     dependencies:
-      '@babel/runtime': 7.13.9
+      '@babel/runtime': 7.13.10
       classnames: 2.2.6
       rc-trigger: 5.2.3_react-dom@17.0.1+react@17.0.1
       react: 17.0.1
@@ -1282,7 +1226,7 @@ packages:
       tarball: rc-dropdown/download/rc-dropdown-3.2.0.tgz
   /rc-field-form/1.19.0_react-dom@17.0.1+react@17.0.1:
     dependencies:
-      '@babel/runtime': 7.13.9
+      '@babel/runtime': 7.13.10
       async-validator: 3.5.1
       rc-util: 5.8.1_react-dom@17.0.1+react@17.0.1
       react: 17.0.1
@@ -1298,7 +1242,7 @@ packages:
       tarball: rc-field-form/download/rc-field-form-1.19.0.tgz
   /rc-image/5.2.3_react-dom@17.0.1+react@17.0.1:
     dependencies:
-      '@babel/runtime': 7.13.9
+      '@babel/runtime': 7.13.10
       classnames: 2.2.6
       rc-dialog: 8.5.2_react-dom@17.0.1+react@17.0.1
       rc-util: 5.8.1_react-dom@17.0.1+react@17.0.1
@@ -1313,7 +1257,7 @@ packages:
       tarball: rc-image/download/rc-image-5.2.3.tgz
   /rc-input-number/7.0.1_react-dom@17.0.1+react@17.0.1:
     dependencies:
-      '@babel/runtime': 7.13.9
+      '@babel/runtime': 7.13.10
       classnames: 2.2.6
       rc-util: 5.8.1_react-dom@17.0.1+react@17.0.1
       react: 17.0.1
@@ -1327,7 +1271,7 @@ packages:
       tarball: rc-input-number/download/rc-input-number-7.0.1.tgz
   /rc-mentions/1.5.3_react-dom@17.0.1+react@17.0.1:
     dependencies:
-      '@babel/runtime': 7.13.9
+      '@babel/runtime': 7.13.10
       classnames: 2.2.6
       rc-menu: 8.10.6_react-dom@17.0.1+react@17.0.1
       rc-textarea: 0.3.4_react-dom@17.0.1+react@17.0.1
@@ -1344,7 +1288,7 @@ packages:
       tarball: rc-mentions/download/rc-mentions-1.5.3.tgz
   /rc-menu/8.10.6_react-dom@17.0.1+react@17.0.1:
     dependencies:
-      '@babel/runtime': 7.13.9
+      '@babel/runtime': 7.13.10
       classnames: 2.2.6
       mini-store: 3.0.6_react-dom@17.0.1+react@17.0.1
       rc-motion: 2.4.1_react-dom@17.0.1+react@17.0.1
@@ -1363,7 +1307,7 @@ packages:
       tarball: rc-menu/download/rc-menu-8.10.6.tgz
   /rc-motion/2.4.1_react-dom@17.0.1+react@17.0.1:
     dependencies:
-      '@babel/runtime': 7.13.9
+      '@babel/runtime': 7.13.10
       classnames: 2.2.6
       rc-util: 5.8.1_react-dom@17.0.1+react@17.0.1
       react: 17.0.1
@@ -1377,7 +1321,7 @@ packages:
       tarball: rc-motion/download/rc-motion-2.4.1.tgz
   /rc-notification/4.5.5_react-dom@17.0.1+react@17.0.1:
     dependencies:
-      '@babel/runtime': 7.13.9
+      '@babel/runtime': 7.13.10
       classnames: 2.2.6
       rc-motion: 2.4.1_react-dom@17.0.1+react@17.0.1
       rc-util: 5.8.1_react-dom@17.0.1+react@17.0.1
@@ -1394,7 +1338,7 @@ packages:
       tarball: rc-notification/download/rc-notification-4.5.5.tgz
   /rc-overflow/1.0.2_react-dom@17.0.1+react@17.0.1:
     dependencies:
-      '@babel/runtime': 7.13.9
+      '@babel/runtime': 7.13.10
       classnames: 2.2.6
       rc-resize-observer: 1.0.0_react-dom@17.0.1+react@17.0.1
       rc-util: 5.8.1_react-dom@17.0.1+react@17.0.1
@@ -1409,7 +1353,7 @@ packages:
       tarball: rc-overflow/download/rc-overflow-1.0.2.tgz
   /rc-pagination/3.1.4_react-dom@17.0.1+react@17.0.1:
     dependencies:
-      '@babel/runtime': 7.13.9
+      '@babel/runtime': 7.13.10
       classnames: 2.2.6
       react: 17.0.1
       react-dom: 17.0.1_react@17.0.1
@@ -1422,7 +1366,7 @@ packages:
       tarball: rc-pagination/download/rc-pagination-3.1.4.tgz
   /rc-picker/2.5.7_react-dom@17.0.1+react@17.0.1:
     dependencies:
-      '@babel/runtime': 7.13.9
+      '@babel/runtime': 7.13.10
       classnames: 2.2.6
       date-fns: 2.19.0
       moment: 2.29.1
@@ -1443,7 +1387,7 @@ packages:
       tarball: rc-picker/download/rc-picker-2.5.7.tgz
   /rc-progress/3.1.3_react-dom@17.0.1+react@17.0.1:
     dependencies:
-      '@babel/runtime': 7.13.9
+      '@babel/runtime': 7.13.10
       classnames: 2.2.6
       react: 17.0.1
       react-dom: 17.0.1_react@17.0.1
@@ -1456,7 +1400,7 @@ packages:
       tarball: rc-progress/download/rc-progress-3.1.3.tgz
   /rc-rate/2.9.1_react-dom@17.0.1+react@17.0.1:
     dependencies:
-      '@babel/runtime': 7.13.9
+      '@babel/runtime': 7.13.10
       classnames: 2.2.6
       rc-util: 5.8.1_react-dom@17.0.1+react@17.0.1
       react: 17.0.1
@@ -1472,7 +1416,7 @@ packages:
       tarball: rc-rate/download/rc-rate-2.9.1.tgz
   /rc-resize-observer/1.0.0_react-dom@17.0.1+react@17.0.1:
     dependencies:
-      '@babel/runtime': 7.13.9
+      '@babel/runtime': 7.13.10
       classnames: 2.2.6
       rc-util: 5.8.1_react-dom@17.0.1+react@17.0.1
       react: 17.0.1
@@ -1487,7 +1431,7 @@ packages:
       tarball: rc-resize-observer/download/rc-resize-observer-1.0.0.tgz
   /rc-select/12.1.5_react-dom@17.0.1+react@17.0.1:
     dependencies:
-      '@babel/runtime': 7.13.9
+      '@babel/runtime': 7.13.10
       classnames: 2.2.6
       rc-motion: 2.4.1_react-dom@17.0.1+react@17.0.1
       rc-overflow: 1.0.2_react-dom@17.0.1+react@17.0.1
@@ -1507,7 +1451,7 @@ packages:
       tarball: rc-select/download/rc-select-12.1.5.tgz
   /rc-slider/9.7.1_react-dom@17.0.1+react@17.0.1:
     dependencies:
-      '@babel/runtime': 7.13.9
+      '@babel/runtime': 7.13.10
       classnames: 2.2.6
       rc-tooltip: 5.1.0_react-dom@17.0.1+react@17.0.1
       rc-util: 5.8.1_react-dom@17.0.1+react@17.0.1
@@ -1525,7 +1469,7 @@ packages:
       tarball: rc-slider/download/rc-slider-9.7.1.tgz
   /rc-steps/4.1.3_react-dom@17.0.1+react@17.0.1:
     dependencies:
-      '@babel/runtime': 7.13.9
+      '@babel/runtime': 7.13.10
       classnames: 2.2.6
       rc-util: 5.8.1_react-dom@17.0.1+react@17.0.1
       react: 17.0.1
@@ -1541,7 +1485,7 @@ packages:
       tarball: rc-steps/download/rc-steps-4.1.3.tgz
   /rc-switch/3.2.2_react-dom@17.0.1+react@17.0.1:
     dependencies:
-      '@babel/runtime': 7.13.9
+      '@babel/runtime': 7.13.10
       classnames: 2.2.6
       rc-util: 5.8.1_react-dom@17.0.1+react@17.0.1
       react: 17.0.1
@@ -1555,7 +1499,7 @@ packages:
       tarball: rc-switch/download/rc-switch-3.2.2.tgz
   /rc-table/7.13.1_react-dom@17.0.1+react@17.0.1:
     dependencies:
-      '@babel/runtime': 7.13.9
+      '@babel/runtime': 7.13.10
       classnames: 2.2.6
       rc-resize-observer: 1.0.0_react-dom@17.0.1+react@17.0.1
       rc-util: 5.8.1_react-dom@17.0.1+react@17.0.1
@@ -1573,7 +1517,7 @@ packages:
       tarball: rc-table/download/rc-table-7.13.1.tgz
   /rc-tabs/11.7.3_react-dom@17.0.1+react@17.0.1:
     dependencies:
-      '@babel/runtime': 7.13.9
+      '@babel/runtime': 7.13.10
       classnames: 2.2.6
       rc-dropdown: 3.2.0_react-dom@17.0.1+react@17.0.1
       rc-menu: 8.10.6_react-dom@17.0.1+react@17.0.1
@@ -1592,7 +1536,7 @@ packages:
       tarball: rc-tabs/download/rc-tabs-11.7.3.tgz
   /rc-textarea/0.3.4_react-dom@17.0.1+react@17.0.1:
     dependencies:
-      '@babel/runtime': 7.13.9
+      '@babel/runtime': 7.13.10
       classnames: 2.2.6
       rc-resize-observer: 1.0.0_react-dom@17.0.1+react@17.0.1
       rc-util: 5.8.1_react-dom@17.0.1+react@17.0.1
@@ -1607,7 +1551,7 @@ packages:
       tarball: rc-textarea/download/rc-textarea-0.3.4.tgz
   /rc-tooltip/5.1.0_react-dom@17.0.1+react@17.0.1:
     dependencies:
-      '@babel/runtime': 7.13.9
+      '@babel/runtime': 7.13.10
       rc-trigger: 5.2.3_react-dom@17.0.1+react@17.0.1
       react: 17.0.1
       react-dom: 17.0.1_react@17.0.1
@@ -1620,10 +1564,10 @@ packages:
       tarball: rc-tooltip/download/rc-tooltip-5.1.0.tgz
   /rc-tree-select/4.3.0_react-dom@17.0.1+react@17.0.1:
     dependencies:
-      '@babel/runtime': 7.13.9
+      '@babel/runtime': 7.13.10
       classnames: 2.2.6
       rc-select: 12.1.5_react-dom@17.0.1+react@17.0.1
-      rc-tree: 4.1.4_react-dom@17.0.1+react@17.0.1
+      rc-tree: 4.1.5_react-dom@17.0.1+react@17.0.1
       rc-util: 5.8.1_react-dom@17.0.1+react@17.0.1
       react: 17.0.1
       react-dom: 17.0.1_react@17.0.1
@@ -1634,9 +1578,9 @@ packages:
     resolution:
       integrity: sha1-cUpP5liqc/KnsKpL1uQ75jGUps4=
       tarball: rc-tree-select/download/rc-tree-select-4.3.0.tgz
-  /rc-tree/4.1.4_react-dom@17.0.1+react@17.0.1:
+  /rc-tree/4.1.5_react-dom@17.0.1+react@17.0.1:
     dependencies:
-      '@babel/runtime': 7.13.9
+      '@babel/runtime': 7.13.10
       classnames: 2.2.6
       rc-motion: 2.4.1_react-dom@17.0.1+react@17.0.1
       rc-util: 5.8.1_react-dom@17.0.1+react@17.0.1
@@ -1650,11 +1594,11 @@ packages:
       react: '*'
       react-dom: '*'
     resolution:
-      integrity: sha1-v1//Nui0DTQkr9En38NkjozGnnE=
-      tarball: rc-tree/download/rc-tree-4.1.4.tgz
+      integrity: sha1-c0qxv+g154eRvkFELKDlcRR6tvo=
+      tarball: rc-tree/download/rc-tree-4.1.5.tgz
   /rc-trigger/5.2.3_react-dom@17.0.1+react@17.0.1:
     dependencies:
-      '@babel/runtime': 7.13.9
+      '@babel/runtime': 7.13.10
       classnames: 2.2.6
       rc-align: 4.0.9_react-dom@17.0.1+react@17.0.1
       rc-motion: 2.4.1_react-dom@17.0.1+react@17.0.1
@@ -1672,7 +1616,7 @@ packages:
       tarball: rc-trigger/download/rc-trigger-5.2.3.tgz
   /rc-upload/4.0.1_react-dom@17.0.1+react@17.0.1:
     dependencies:
-      '@babel/runtime': 7.13.9
+      '@babel/runtime': 7.13.10
       classnames: 2.2.6
       rc-util: 5.8.1_react-dom@17.0.1+react@17.0.1
       react: 17.0.1
@@ -1686,7 +1630,7 @@ packages:
       tarball: rc-upload/download/rc-upload-4.0.1.tgz
   /rc-util/5.8.1_react-dom@17.0.1+react@17.0.1:
     dependencies:
-      '@babel/runtime': 7.13.9
+      '@babel/runtime': 7.13.10
       react: 17.0.1
       react-dom: 17.0.1_react@17.0.1
       react-is: 16.13.1
@@ -1724,32 +1668,24 @@ packages:
       react: 17.0.1
     resolution:
       integrity: sha1-HeJWBHTsnw4zQoVmLt5S28VCb8Y=
-      tarball: react-dom/download/react-dom-17.0.1.tgz
+      tarball: react-dom/download/react-dom-17.0.1.tgz?cache=0&sync_timestamp=1615343382751&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Freact-dom%2Fdownload%2Freact-dom-17.0.1.tgz
   /react-is/16.13.1:
     resolution:
       integrity: sha1-eJcppNw23imZ3BVt1sHZwYzqVqQ=
-      tarball: react-is/download/react-is-16.13.1.tgz
-  /react-redux/7.2.2_380dc38591053d98779d1f25fc7202b9:
+      tarball: react-is/download/react-is-16.13.1.tgz?cache=0&sync_timestamp=1615343423857&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Freact-is%2Fdownload%2Freact-is-16.13.1.tgz
+  /react-redux/7.2.2_react@17.0.1+redux@4.0.5:
     dependencies:
-      '@babel/runtime': 7.13.9
+      '@babel/runtime': 7.13.10
       hoist-non-react-statics: 3.3.2
       loose-envify: 1.4.0
       prop-types: 15.7.2
       react: 17.0.1
-      react-dom: 17.0.1_react@17.0.1
       react-is: 16.13.1
       redux: 4.0.5
     dev: false
     peerDependencies:
       react: ^16.8.3 || ^17
-      react-dom: '*'
-      react-native: '*'
       redux: ^2.0.0 || ^3.0.0 || ^4.0.0-0
-    peerDependenciesMeta:
-      react-dom:
-        optional: true
-      react-native:
-        optional: true
     resolution:
       integrity: sha1-A4YugDowtrnvhYLa3MgQlH90tzY=
       tarball: react-redux/download/react-redux-7.2.2.tgz
@@ -1759,10 +1695,10 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-cYYzN63D5cL4pr/d0Srjv+Mqr78=
-      tarball: react-refresh/download/react-refresh-0.9.0.tgz?cache=0&sync_timestamp=1614818977331&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Freact-refresh%2Fdownload%2Freact-refresh-0.9.0.tgz
+      tarball: react-refresh/download/react-refresh-0.9.0.tgz
   /react-router-dom/5.2.0_react@17.0.1:
     dependencies:
-      '@babel/runtime': 7.13.9
+      '@babel/runtime': 7.13.10
       history: 4.10.1
       loose-envify: 1.4.0
       prop-types: 15.7.2
@@ -1778,7 +1714,7 @@ packages:
       tarball: react-router-dom/download/react-router-dom-5.2.0.tgz?cache=0&sync_timestamp=1603082419987&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Freact-router-dom%2Fdownload%2Freact-router-dom-5.2.0.tgz
   /react-router/5.2.0_react@17.0.1:
     dependencies:
-      '@babel/runtime': 7.13.9
+      '@babel/runtime': 7.13.10
       history: 4.10.1
       hoist-non-react-statics: 3.3.2
       loose-envify: 1.4.0
@@ -1804,7 +1740,7 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-bgYAQWvVdXTj+G2S7bo9kAhyYSc=
-      tarball: react/download/react-17.0.1.tgz
+      tarball: react/download/react-17.0.1.tgz?cache=0&sync_timestamp=1615343382087&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Freact%2Fdownload%2Freact-17.0.1.tgz
   /readdirp/3.5.0:
     dependencies:
       picomatch: 2.2.2
@@ -1834,18 +1770,6 @@ packages:
     resolution:
       integrity: sha1-/1G2xr4lmOm16J/DZjkYa7Dmacc=
       tarball: redux-observable/download/redux-observable-1.2.0.tgz
-  /redux-saga/1.1.3:
-    dependencies:
-      '@redux-saga/core': 1.1.3
-    dev: false
-    resolution:
-      integrity: sha1-nz5q69PJlLvA9pAaYl+aQrUdERI=
-      tarball: redux-saga/download/redux-saga-1.1.3.tgz
-  /redux-thunk/2.3.0:
-    dev: false
-    resolution:
-      integrity: sha1-UcLBmhhe1Rh6qpotCLZm0NZGdiI=
-      tarball: redux-thunk/download/redux-thunk-2.3.0.tgz
   /redux/4.0.5:
     dependencies:
       loose-envify: 1.4.0
@@ -1880,7 +1804,7 @@ packages:
     resolution:
       integrity: sha1-YpoBP7P3B1XW8LeTXMHCxTeLGXU=
       tarball: resolve/download/resolve-1.20.0.tgz
-  /rollup/2.40.0:
+  /rollup/2.41.0:
     dev: true
     engines:
       node: '>=10.0.0'
@@ -1888,8 +1812,8 @@ packages:
     optionalDependencies:
       fsevents: 2.3.2
     resolution:
-      integrity: sha1-78IY6u3nq1kJVN9Q+WGVGImZwwQ=
-      tarball: rollup/download/rollup-2.40.0.tgz?cache=0&sync_timestamp=1614354047765&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Frollup%2Fdownload%2Frollup-2.40.0.tgz
+      integrity: sha1-sqOYu6u/Inc43trvCZ5JSu1GiYI=
+      tarball: rollup/download/rollup-2.41.0.tgz
   /rxjs/6.6.6:
     dependencies:
       tslib: 1.14.1
@@ -1972,7 +1896,7 @@ packages:
       esbuild: 0.8.57
       open: 7.4.2
       resolve: 1.20.0
-      rollup: 2.40.0
+      rollup: 2.41.0
     dev: true
     engines:
       node: '>=10.19.0'
@@ -2052,25 +1976,6 @@ packages:
     resolution:
       integrity: sha1-zy04vcNKE0vK8QkcQfZhni9nLQA=
       tarball: tslib/download/tslib-1.14.1.tgz
-  /typescript-compare/0.0.2:
-    dependencies:
-      typescript-logic: 0.0.0
-    dev: false
-    resolution:
-      integrity: sha1-fuQKQApAbC6gp+VR79MwkCHV9CU=
-      tarball: typescript-compare/download/typescript-compare-0.0.2.tgz
-  /typescript-logic/0.0.0:
-    dev: false
-    resolution:
-      integrity: sha1-ZuvYKiVI8rREpDZnvsEgtJaJAZY=
-      tarball: typescript-logic/download/typescript-logic-0.0.0.tgz
-  /typescript-tuple/2.2.1:
-    dependencies:
-      typescript-compare: 0.0.2
-    dev: false
-    resolution:
-      integrity: sha1-fZgT+0s1X2msVQMuA2Pouw8E2tI=
-      tarball: typescript-tuple/download/typescript-tuple-2.2.1.tgz
   /typescript/4.2.3:
     dev: true
     engines:
@@ -2078,7 +1983,7 @@ packages:
     hasBin: true
     resolution:
       integrity: sha1-OQYtgBmRLUNyYpjwlJPVmASMHOM=
-      tarball: typescript/download/typescript-4.2.3.tgz?cache=0&sync_timestamp=1615202877385&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ftypescript%2Fdownload%2Ftypescript-4.2.3.tgz
+      tarball: typescript/download/typescript-4.2.3.tgz
   /untildify/2.1.0:
     dependencies:
       os-homedir: 1.0.2
@@ -2145,8 +2050,6 @@ specifiers:
   redux: ^4.0.5
   redux-devtools-extension: ^2.13.8
   redux-observable: ^1.2.0
-  redux-saga: ^1.1.3
-  redux-thunk: ^2.3.0
   rxjs: ^6.6.6
   sass: ^1.32.8
   snowpack: ^3.0.13
